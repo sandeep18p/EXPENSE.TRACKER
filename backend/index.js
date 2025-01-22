@@ -13,7 +13,7 @@ const PORT = 3000;
 app.use(cookieParser());
 app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Auth-Token'],
-  credentials: true, // if you're sending cookies along with token
+  credentials: true,
 }));
 app.use(bodyParser.json());
 app.use(function(req, res, next) {
