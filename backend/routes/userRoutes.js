@@ -2,6 +2,7 @@ const express = require('express');
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const Sib = require('sib-api-v3-sdk');
 
 const router = express.Router();
 const JWT_SECRET = 'your_secret_key';
